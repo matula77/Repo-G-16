@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <link rel="icon" href="../images/icono-logo-solapa.png">
+    <script src="https://kit.fontawesome.com/8acd87fd5f.js" crossorigin="anonymous"></script>
+    <title>Autogestion - Login</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-header">
+            <a href="index.html">
+                <img src="../images/vitalidad2.png" alt="logo de la clinica">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav_ul">
+                <li class="nav_li"><i class="fa-solid fa-house-medical"></i><a href="../index.html">Inicio</a></li>
+                <li class="nav_li"><i class="fa-solid fa-building-columns"></i><a href="./institucional.html">Institucional</a></li>
+                <li class="nav_li"><i class="fa-solid fa-desktop"></i><a href="./portal.html">Portal</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn">Turnos Online</a>
+    </header>
+    <main>
+        <div class="blocks-container">
+        <section class="blocks">
+            <div class="block">
+                <div class="registro">
+                    <form action="show_data.html" target="_blank"><!--mostrardatosform.html-->
+                        <fieldset>
+
+                            <legend>Datos personales </legend>
+                            <label for="Nombre">Nombre</label>
+                            <input type="text" name="Nombre" placeholder="Nombre"><br><br>
+                            <label for="Apellido">Apellido</label>
+                            <input name="Apellido" type="text" placeholder="Apellido"><br><br>
+                            <label for="Correo">E-Mail</label>
+                            <input type="email" name="Correo" placeholder="E-Mail"><br><br>
+
+                            <label for="Pass">Password</label>
+                            <input type="password" name="Pass" placeholder="Ingrese Password">
+
+                        </fieldset>
+                        <p>Género (Seleccione)
+                            <input type="radio" name="gender" value="hombre" checked>Hombre
+                            <input type="radio" name="gender" value="Mujer">Mujer
+                            <input type="radio" name="gender" value="Ninio">Niño
+                            <input type="radio" name="gender" value="Prefiero no decirlo">Prefiero no decirlo
+                        </p>
+                        <fieldset>
+                            <legend>Motivos Consulta</legend>
+                            <label for="estudios">Especialidad: (Seleccione)</label>
+                            <select id="estudios" name="estudios">
+                                <option value="Clinica">Clinica</option>
+                                <option value="Analisis">Analisis Clinicos</option>
+                                <option value="Pediatra">Pediatra</option>
+                                <option value="Odontologia">Odontologia</option>
+                                <option value="Ginecologia">Ginecologia</option>
+                                <option value="Oftalmologia">Oftalmologia</option>
+                                <option value="Traumatologia">Traumatologia</option>
+                                <option value="Fisiterapia">Fisioterapia</option>
+                                <option value="Fonoaudiologo">Fonoaudiologo</option>
+                                <option value="Psicologia">Psicologia</option>
+
+
+                            </select>
+                            <br>
+                            <p> Estudios Previos: Selecione <br>
+                                <input type="checkbox" name="Radiografias" value="Radiografias"> Radiografias
+                                <input type="checkbox" name="Analisis Clinicos" value="Analisis Clinicos"> Analisis
+                                Clinicos
+                                <input type="checkbox" name="Electrocardiogramas" value="Electrocardiogramas">
+                                Electrocardiogramas
+                                <input type="checkbox" name="Resonancia Magentica" value="Resonancia Magentica">
+                                Resonancia Magnetica
+                                <input type="checkbox" name="Otras Especialidades" value="Otras Especialidades"> Otras
+                                Especialiddades
+
+                            </p>
+
+                            <label for="comentarios">Comentarios:</label> <br>
+                            <textarea name="comentarios" rows="10" cols="80" style="resize: none;"></textarea>
+                            <br>
+                        </fieldset>
+
+                        </fieldset>
+                        <fieldset>
+                            <legend>Otras Consultas</legend>
+                            <label for="turno">Obra Social </label>
+                            <select name="turno" id="">
+                                <option value="Pami">Pami</option>
+                                <option value="Sancor Salud">Sancor Salud</option>
+                                <option value="Medife" selected="True">Medife</option>
+                                <option value="Otras" seldected="True">Otras </option>
+                            </select>
+                        </fieldset>
+                        <button id="btnform" type="submit"><a href="/proyecto-centro-medico/index.html">Enviar datos</a></button>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><i class="fas fa-map-marker-alt"></i> Callefalsa, 123, Buenos Aires, Argentina</p>
+                <p><i class="fas fa-envelope"></i> info@clinicavitalidad.com</p>
+                <p><i class="fas fa-phone"></i> (2246) 556311</p>
+            </div>
+            <div class="footer-logo">
+                <img src="../images/vitalidad2.png" alt="Clínica Pueyrredon">
+            </div>
+            <div class="footer-social">
+                <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Clínica Vitalidad - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+
+</html>

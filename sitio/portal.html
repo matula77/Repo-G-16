@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <link rel="icon" href="../images/icono-logo-solapa.png">
+    <script src="https://kit.fontawesome.com/8acd87fd5f.js" crossorigin="anonymous"></script>
+    <title>Portal</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-header">
+            <a href="index.html">
+                <img src="../images/vitalidad2.png" alt="logo de la clinica">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav_ul">
+                <li class="nav_li"><i class="fa-solid fa-house-medical"></i><a href="../index.html">Inicio</a></li>
+                <li class="nav_li"><i class="fa-solid fa-building-columns"></i><a href="../sitio/institucional.html">Institucional</a></li>
+                <li class="nav_li"><i class="fa-solid fa-desktop"></i><a href="#">Portal</a></li>
+            </ul>
+        </nav>
+        <a href="../sitio/turnosonline.html" class="btn">Turnos Online</a>
+    </header>
+
+    <main class="main-usu">
+        <section class="sect-tit">
+            <img src="../images/icono-usuario.png" alt="">
+            <h3>Ingreso al Portal Personal</h3>
+        </section>
+        <section class="sect-dat">
+            <article class="art-usu">
+                <form action="" method="post">
+                    <fieldset>
+                        <label for = "correo"> Email: </label>
+                            <input type="email" name="correo" id = "correo" placeholder="Usuario@gmail.com">
+                        <label for="dni">DNI:</label>
+                            <input type="text" id="dni" name="dni"placeholder="44579846">
+                        <label for="pass">Contraseña:</label>
+                            <input type="password" id="pass" name="pass" placeholder="Contraseña">
+                        <button id="ingresar"><a href="../sitio/Tramites.html">Ingresar</a></button>
+                        <div class="bot-form">
+                            <button><a href="#">Recuperar contraseña</a></button>
+                            <span class="separador"></span>
+                            <button><a href="../sitio/formulario.html">Contactenos</a></button>
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+            <article class="boton-usu">
+                <div class="botonText">
+                    <h3>Registro</h3>
+                    <p>Si no tiene un usuario</p>
+                    <h3>Cuenta compartida</h3>
+                    <p>Ingreso con la cuenta compartida</p>
+                </div>
+                <div class="botonAcci">
+                    <button><a href="../sitio/registro.html">Registrarse</a></button>
+                    <button><a href="../sitio/paciente.html">Ingresar</a></button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><i class="fas fa-map-marker-alt"></i> Callefalsa, 123, Buenos Aires, Argentina</p>
+                <p><i class="fas fa-envelope"></i> info@clinicavitalidad.com</p>
+                <p><i class="fas fa-phone"></i> (2246) 556311</p>
+            </div>
+            <div class="footer-logo">
+                <img src="../images/vitalidad2.png" alt="Clínica Pueyrredon">
+            </div>
+            <div class="footer-social">
+                <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Clínica Vitalidad - Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <a href="" target="_blank" class="float">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</body>
+
+</html>
