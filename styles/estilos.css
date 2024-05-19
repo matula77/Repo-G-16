@@ -204,18 +204,38 @@
 
 }
 
-
-/* Esta parte son las 4 imagenes, la idea es poner un titulo y una breve descripcion y en todo caso que te redireccione a otro sitio/pagina */
 .contenedor-imagenes{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
 }
-
 .img-carrousel{
     margin: 15px;
-    width: 350px;
+    width: 550px;
 }
+
+/* Texto INICIO  */
+
+.barra-excelencia {
+    position: relative;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin: 20px 0;
+}
+
+.barra-excelencia p {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.barra-excelencia span {
+    color: #1a65a6;
+}
+
+
 
 /*Boton de whatsapp fijo  */
 .float{
@@ -288,8 +308,9 @@
 .art-usu {
     background-color: #43a19e;
     color: white;
-    height: 100%;
-    width: 50%;
+    flex: 1;
+    padding: 2em;
+    border-right: solid 1px #3b8d8a;
 }
 
 .art-usu form fieldset{
@@ -300,7 +321,7 @@
 
 .art-usu form label {
     margin-top: 3%;
-    font-size: large;
+    font-size: 1.5em;
 }
 
 .art-usu form input {
@@ -384,7 +405,6 @@
     background-color: rgba(255, 255, 255, 0.753);
     color: rgba(33, 102, 100, 0.753);
 }
-/*  Fin PORTAL  */
 
 /*    Footer     */
 footer {
@@ -433,7 +453,7 @@ footer {
 
 .footer-bottom {
     background-color: #7f8c8d;
-    padding: 10px;
+    padding: 15px;
 }
 
 .footer-bottom p {
@@ -464,6 +484,17 @@ footer {
     background-color: #ddf6f2;
 }
 
+
+/*Contenedor de formulario y botones*/
+.sect-dat {
+    display: flex;
+    flex-direction: row;
+    background-color: #43a19e;
+    padding: 2em;
+    border: solid #3b8d8a;
+    margin: 2% auto;
+    width: 80%;
+}
 
 
 
