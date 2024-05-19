@@ -27,7 +27,7 @@ Este proyecto forma parte de la primera etapa del curso. Consiste en el desarrol
 *Colaboradores*
 
 Este proyecto está siendo desarrollado por un equipo de colaboradores comprometidos con la creación de una plataforma intuitiva y funcional para la gestión médica.
-* [Leila Lucrecia Borchia](https://github.com/BorchiaLucrecia)
+
 * [Juan Patricio Garcia](https://github.com/juampilogico)
 * [Martin Lautaro Velasco](https://github.com/MartinV-Do3)
 * [Miguel Ángel Tula](https://github.com/matula77)
