@@ -13,7 +13,6 @@
     padding: 0;
     overflow-x: hidden;
 }
-
 /*  Header */
 .header {
     background-color: #ffffff;
@@ -26,18 +25,15 @@
     padding: 0 20px;
     box-sizing: border-box;
 }
-/*Logo en header*/
 .logo-header img {
     height: 140px;
     max-width: 100%;
     transition: transform 0.9s;
 }
-
 .header .logo-header img:hover,
 .contenedor-footer .logo-footer img{
     transform: scale(1.2);
 }
-
 .logo-header a,
 .logo-footer a{
     display: inline-flex;
@@ -46,20 +42,17 @@
     padding: 5px;
     transition: all 0.3s ease;
 }
-
 .logo-header a :hover,
 .logo-footer a :hover{
     transform: translateY(-3px);
     box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
 }
-
 .logo-header img,
 .logo-footer img{
     max-width: 100%;
     max-height: 100%;
     transition: all 0.9s;
 }
-
 .logo-header img:hover,
 .logo-footer img:hover{
     transform: scale(1.2);
@@ -70,12 +63,10 @@
     flex-grow: 1;
     text-align: center;
 }
-
 .nav_ul{
     margin: 0;
     padding: 0;
 }
-
 .nav_li{
     display: inline-block;
     padding: 15px;
@@ -83,11 +74,9 @@
     font-size: 15px;
     font-weight: bold;
 }
-
 .nav_li:hover > a {
     color: #43a19e;
     transition: all 0.6s;
-
 }
 .nav_li a{
     color: #273739;
@@ -100,20 +89,17 @@
     text-align: right;
     margin-right: 7px;
 }
-
-/**** INSTITUCIONAL ****/
+/**** INSTITUCIONAL / FORMULARIO DE TURNOS ONLINE ****/
 .blocks-container{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 5%;
 }
-
 .blocks {
     animation: slideIn 1s ease forwards;
     max-width: 92%;
 }
-
 .block {
     justify-content: center;
     align-items: center;
@@ -125,7 +111,6 @@
     box-sizing: border-box;
     width: 100%;
 }
-
 .block img {
     width: 35%;
     height: auto;
@@ -133,7 +118,6 @@
     margin-right: 2%;
     padding: 15px;
 }
-
 .block p, .formulario {
     color: #273739;
     border-radius: 25px;
@@ -149,8 +133,7 @@
     margin-right: 5%;
     padding: 50px;
 }
-
-/*Estilos para boton de "Turnos online*/
+/*Estilos de algunos botones*/
 .btn{
     border: 2px solid #43a19e;
     border-radius: 20px;
@@ -166,7 +149,6 @@
     background-color: #43a19e;
     color: #ffffff;
 }
-/*Estilos para boton de "Enviar datos" de Turnos online*/
 .contenedorbtn2{
     padding: 15px;
     text-align: center;
@@ -186,62 +168,14 @@
     background-color: #43a19e;
     color: #ffffff;
 }
-
-
-
-
-
-
-
-/*  Contenedor imagenes (La idea era hacer un carrusel)*/
-.caja{
-    justify-content: center;
-    display: flex;
-}
-
-/*  estilos imágenes  */
-.caja img{
-    max-width: 100%;
-    height: auto;
-}
-.section-f {
-    padding: 5px 10%;
-    
-} 
 /*  Contenedor mapa  */
 .mapa {
     width: 94%;
-    height: 350px; /* Puedes ajustar la altura según sea necesario */
+    height: 350px;
     border: 0;
     padding: 3%;
 }
-
-.section-f a{
-    text-decoration: none;
-    color: black;
-}
-
-.section-f a:hover {
-    color: #43a19e;
-    transition: all 0.6s;
-
-}
-
-.contenedor-imagenes{
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-
-}
-.img-carrousel {
-    border-radius: 20px;
-    margin: 30px; 
-    width: 430px; 
-    height: auto;
-    max-width: 100%;
-}
-
-/* Texto INICIO  */
+/* Texto INICIO - imagenes INICIO  */
 
 .barra-excelencia {
     position: relative;
@@ -261,8 +195,17 @@
 .barra-excelencia span {
     color: #2b2b2f;
 }
-
-
+.img-carrousel {
+    border-radius: 20px;
+    margin: 30px; 
+    width: 430px; 
+    height: auto;
+    max-width: 100%;
+}
+.caja{
+    justify-content: center;
+    display: flex;
+}
 
 /*Boton de whatsapp fijo  */
 .float{
@@ -283,166 +226,12 @@
 .float:hover{
     background-color: #27f472;
 }
-.main-usu {
-    height: 120vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(../images/salas-de-espera.jpg);
-    background-size: cover; 
-}
-
-.sect-tit {
-    display: flex;
-    flex-direction: row;
-    background-color: #43a19e;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-    border-top: solid #3b8d8a;
-    border-right: solid #3b8d8a;
-    border-left: solid #3b8d8a;
-    margin-top: 5%;
-    box-sizing: border-box;
-}
-
-.sect-tit h3{
-    padding: 2%;
-    margin: 4%;
-    color: rgb(255, 255, 255);
-    font-size: 200%;
-}
-
-.sect-tit img {
-    width: 10%;
-}
-
-/*Contenedor de formulario y botones*/
-.sect-dat {
-    display: flex;
-    flex-direction: row;
-    background-color: #43a19e;
-    height: 50%;
-    width: 80%;
-    border: solid #3b8d8a;
-    margin-bottom: 5%;
-    margin-top: 2%;
-    padding: 2%;
-    box-sizing: border-box;
-
-}
-
-/*Formulario*/
-.art-usu {
-    background-color: #43a19e;
-    color: white;
-    flex: 1;
-    padding: 2em;
-    border-right: solid 1px #3b8d8a;
-}
-
-.art-usu form fieldset{
-    display: flex;
-    flex-direction: column;
-    border: none;
-}
-
-.art-usu form label {
-    margin-top: 3%;
-    font-size: 1.5em;
-}
-
-.art-usu form input {
-    border: 0.2em solid rgba(33, 102, 100, 0.753);
-    width: 90%;
-    height: 2em;
-}
-
-#ingresar {
-    margin-top: 10%;
-    font-size: 120%;
-    width: 91%;
-    padding: 1%;
-    border: 0.15em solid rgba(33, 102, 100, 0.753);
-    background-color: #157DC3;
-    color: white;
-}
-#ingresar:hover{
-    background-color: rgba(255, 255, 255, 0.753);
-    color: rgba(33, 102, 100, 0.753);
-}
-#ingresar a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.bot-form button{
-    margin-top: 10%;
-    border: none;
-    background-color: #43a19e;
-    color: white;  
-}
-
-.bot-form button:hover {
-    color: #157DC3;
-}
-
-.separador {
-    display: inline-block;
-    width: 2px; 
-    height: 10px; 
-    background-color: #157DC3; 
-    margin: 0 10px; 
-}
-
-.bot-form a{
-    text-decoration: none;
-    color: inherit;
-}
-/*Botones*/
-.boton-usu {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 5%;
-    justify-content: center;
-}
-
-.boton-usu div {
-    display: flex;
-    flex-direction: column;
-    margin: 5%;
-}
-
-.botonAcci button{
-    margin-top: 15%;
-    font-size: 100%;
-    border: 0.15em solid rgba(33, 102, 100, 0.753);
-    background-color: #157DC3;
-    color: white;
-}
-
-.botonAcci button a{
-    text-decoration: none;
-    color: inherit;
-    padding: 3%;
-}
-
-.botonAcci button:hover{
-    background-color: rgba(255, 255, 255, 0.753);
-    color: rgba(33, 102, 100, 0.753);
-}
-
 /*    Footer     */
 footer {
     background-color: #ffffff;
     color: #000000;
     text-align: center;
 }
-
 .footer-container {
     display: flex;
     justify-content: space-around;
@@ -450,11 +239,9 @@ footer {
     text-align: center;
     padding: 20px;
 }
-
 .footer-contact p {
     margin: 10px 0;
 }
-
 .footer-contact i,
 .footer-social i {
     margin-right: 10px;
@@ -490,38 +277,4 @@ footer {
 .footer-bottom p {
     margin: 0;
     font-size: 14px;
-}
-
-
-
-/* Agregados para el formulario */
-
-.registro label{
-
-    font-weight: bold;
-    display: inline-flex;
-
-}
-#btnform{
-    width: 100%;
-    height: auto;
-    padding: 8px;
-    font-size: 15px;
-    border-radius: 15px;
-
-}
-#btnform:hover{
-    background-color: #ddf6f2;
-}
-
-
-/*Contenedor de formulario y botones*/
-.sect-dat {
-    display: flex;
-    flex-direction: row;
-    background-color: #43a19e;
-    padding: 2em;
-    border: solid #3b8d8a;
-    margin: 2% auto;
-    width: 80%;
 }

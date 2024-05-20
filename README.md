@@ -7,7 +7,7 @@ Aquí encontrarás toda la información relevante sobre nuestro proyecto de siti
 
   1. INICIO 
   2. INSTITUCIONAL
-  3. PORTAL
+  3. PORTAL (Página responsive con 3 cortes: PC - Tablet - Celular)
   4. TURNOS ONLINE
 
 *Tecnologías utilizadas*

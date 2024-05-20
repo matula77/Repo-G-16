@@ -66,74 +66,6 @@
     transform: scale(1.2);
 }
 
-/* esto se debe agregar al CSS general*/
-/**** INSTITUCIONAL ****/
-.blocks-container{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 185px;
-    margin-bottom: 10%;
-    margin-left: 1%;
-}
-
-.blocks {
-    animation: slideIn 1s ease forwards;
-    max-width: 92%;
-}
-
-.block {
-    display: flex;
-    background-color: #FFF;
-    padding: 10px;
-    margin-top: 45px;
-    border-radius: 25px;
-}
-
-.block img {
-    width: 35%;
-    height: auto;
-    border-radius: 25px;
-    margin-right: 2%;
-    padding: 15px;
-}
-
-.block p, .formulario {
-    color: #273739;
-    border-radius: 25px;
-    font-size: larger;
-    text-align: justify;
-}
-.block p {
-    flex: 1;
-    color: #273739;
-    border-radius: 25px;
-    font-size: 16px large;
-    margin-right: 5%;
-    padding: 50px;
-}
-
-/*Estilos para btn de "Turnos online*/
-.btn{
-    border: 2px solid #43a19e;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 25px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #43a19e;
-    transition: all 0.3s ease;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-}
-
-.btn:hover{
-    background-color: #43a19e;
-    color: #ffffff;
-}
-
-
 /*  nav */
 .nav{
     background-color: #43a19e;
@@ -170,73 +102,6 @@
     text-align: right;
     margin-right: 5px;
 }
-
-/*  Contenedor imagenes proximo carrusel  */
-.caja{
-    justify-content: center;
-    display: flex;
-}
-
-/*  estilos imágenes  */
-.caja img{
-    max-width: 100%;
-    height: auto;
-}
-
-/*    Estilos al contenedor del mapa     */
-.mapa{
-    margin: 40px;
-}
-
-.section-f {
-    padding: 5px 10%;
-    
-} 
-
-.section-f a{
-    text-decoration: none;
-    color: black;
-}
-
-.section-f a:hover {
-    color: #43a19e;
-    transition: all 0.6s;
-
-}
-
-.contenedor-imagenes{
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-}
-.img-carrousel{
-    margin: 15px;
-    width: 550px;
-}
-
-/* Texto INICIO  */
-
-.barra-excelencia {
-    position: relative;
-    padding: 10px 0;
-    text-align: center;
-    font-size: 40px;
-    color: white;
-    margin: 20px 0;
-}
-
-.barra-excelencia p {
-    margin: 0;
-    font-size: 1.8em;
-    font-weight: bold;
-}
-
-.barra-excelencia span {
-    color: #1a65a6;
-}
-
-
-
 /*Boton de whatsapp fijo  */
 .float{
     position: fixed;
@@ -257,7 +122,7 @@
     background-color: #27f472;
 }
 
-/* --- usuario --- */
+/* Usuario  */
 .main-usu {
     height: 120vh;
     width: 100vw;
@@ -269,7 +134,7 @@
     background-size: cover; 
 }
 
-/*requisito*/
+/*Contenedor de form central*/
 main h4 {
     display: none;
 }
@@ -309,7 +174,7 @@ main h4 {
     margin-bottom: 5%;
 }
 
-/*Formulario*/
+/*Estilo de botones, etc form de ingreso/registro*/
 .art-usu {
     background-color: #43a19e;
     color: white;
@@ -384,28 +249,6 @@ main h4 {
     text-decoration: none;
     color: inherit;
 }
-/*Botones*/
-.boton-usu {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 5%;
-    justify-content: center;
-}
-
-.boton-usu div {
-    display: flex;
-    flex-direction: column;
-    margin: 5%;
-}
-
-
-
-
-
-
-/* --- Fin usuario --- */
 
 /*    Footer     */
 footer {
@@ -461,43 +304,7 @@ footer {
     margin: 0;
     font-size: 14px;
 }
-
-
-
-/* Agregados para el formulario */
-
-.registro label{
-    font-weight: bold;
-    width:300px ;
-    margin-right: 25px;
-    padding: 5px;
-
-}
-#btnform{
-    width: 100%;
-    height: auto;
-    padding: 8px;
-    font-size: 16px;
-    border-radius: 15px;
-
-}
-#btnform:hover{
-    background-color: #ddf6f2;
-}
-
-
-/*Contenedor de formulario y botones*/
-.sect-dat {
-    display: flex;
-    flex-direction: row;
-    background-color: #43a19e;
-    padding: 2em;
-    border: solid #3b8d8a;
-    margin: 2% auto;
-    width: 80%;
-}
-
-
+/*mediaq*/
 @media all and (min-width:320px) {
     
     .header {
@@ -533,11 +340,11 @@ footer {
     }
 
     #contenedor-menu:target .nav_ul {
-        height: 45vh; /* Ocupa toda la altura de la ventana */
-        width: 100%; /* Ocupa toda la anchura de la ventana */
-        top: 30%; /* Se posiciona en la parte superior */
-        left: 0; /* Se posiciona en la parte izquierda */
-        position: absolute; /* Fija el menú en la ventana */
+        height: 45vh; 
+        width: 100%;
+        top: 30%; 
+        left: 0; 
+        position: absolute; 
         transition: 1s height ease;
         background-color: #2b2b2f;
     }
@@ -612,11 +419,11 @@ footer {
         display: flex;
         flex-direction: column;
         text-align: center;
-        height: 45vh; /* Ocupa toda la altura de la ventana */
-        width: 100%; /* Ocupa toda la anchura de la ventana */
-        top: 28%; /* Se posiciona en la parte superior */
-        left: 0; /* Se posiciona en la parte izquierda */
-        position: absolute; /* Fija el menú en la ventana */
+        height: 45vh; 
+        width: 100%; 
+        top: 28%; 
+        left: 0; 
+        position: absolute; 
         transition: 1s height ease;
         background-color: #2b2b2f;
     }
