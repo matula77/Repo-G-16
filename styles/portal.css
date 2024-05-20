@@ -510,6 +510,14 @@ footer {
         width: 25%;
     }
 
+    .header .logo-header img:hover, .contenedor-footer .logo-footer img {
+        transform: none;
+    }
+
+    .logo-header a :hover, .logo-footer a :hover {
+        box-shadow: none; 
+    }
+
     #contenedor-menu .nav_ul {
         height: 0vh;
         /*transition: 1s height ease; personalizacion ocultar*/
@@ -544,7 +552,7 @@ footer {
 
     #contenedor-menu .nav_ul a {
         margin-bottom: 0.5rem;
-        color: aliceblue;
+
     } 
 
     #contenedor-menu img {
@@ -630,38 +638,77 @@ footer {
         flex-direction: row;
         align-items: center;
     }
-
-    .btn{
-        color: #43a19e;
-    }
     
+    .header {
+        height: 170px;
+        width: 100%;
+    }
+
+    .header nav {
+        height: 100%;
+    }
+
+    .header .nav_ul i {
+        font-size: 14px;
+    }
+
+    .header .nav_ul a {
+        font-size: 14px;
+    }
+
+    .logo-header img{
+        width: 45%;
+        height: 10%;
+    }
+
+    .nav_ul li {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav_ul li a{
+        padding-top: 6%;
+    }
+
+    .nav_ul li .btn {
+        
+        margin-left: 12vw;
+        border: 2px solid #43a19e;
+        border-radius: 20px;
+        padding: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #43a19e ;
+        transition: all 0.3s ease;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
     .btn:hover{
         background-color: #43a19e;
         color: #ffffff !important;
     }
 
-    .header {
+    .logo-header img, .logo-footer img {
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: 4.5vw;
         
-        width: 100%;
-    }
-
-    .logo-header img {
-        
-        width: 15vw;
     }
 
     #contenedor-menu {
         width: 80%;
-        margin-left: 20%;
+        margin-left: 15%;
     }
 
 
-    #contenedor-menu .nav_li a {
+    #contenedor-menu .nav_li > a:not(.btn) {
         color: #273739;
     }
 
-    .nav_li:hover > a{
-        color: #43a19e ;
+    .nav_li:hover > a:not(.btn){
+        color: #43a19e !important;
         transition: all 0.6s;
     
     }
