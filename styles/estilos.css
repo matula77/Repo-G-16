@@ -7,9 +7,9 @@
     font-weight: 430;
     font-style: normal;
     font-variation-settings:"wdth" 100;
-    font-size: 16px;
-    background: rgb(198,255,241);
-    background: linear-gradient(0deg, rgba(198,255,241,1) 23%, rgba(106,223,192,1) 53%, rgba(78,186,160,1) 85%);
+    font-size: 14px;
+    background: rgb(39,69,68);
+    background: linear-gradient(0deg, rgba(39,69,68,1) 1%, rgba(40,77,76,1) 4%, rgba(50,162,158,1) 35%, rgba(67,161,144,1) 69%);
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Evita el scroll horizontal */
@@ -21,7 +21,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 200px;
+    height: 170px;
     width: 100%;
     z-index: 1000;
     padding: 0 20px;
@@ -29,7 +29,7 @@
 }
 /*Logo en header y en footer*/
 .logo-header img {
-    height: 165px;
+    height: 140px;
     max-width: 100%;
     transition: transform 0.9s;
 }
@@ -66,7 +66,6 @@
     transform: scale(1.2);
 }
 
-/* esto se debe agregar al CSS general*/
 /**** INSTITUCIONAL ****/
 .blocks-container{
     position: relative;
@@ -90,6 +89,8 @@
     padding: 10px;
     margin-top: 45px;
     border-radius: 25px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .block img {
@@ -105,6 +106,7 @@
     border-radius: 25px;
     font-size: larger;
     text-align: justify;
+    flex: 1;
 }
 .block p {
     flex: 1;
@@ -120,7 +122,7 @@
     border: 2px solid #43a19e;
     border-radius: 20px;
     padding: 10px 20px;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
     text-decoration: none;
     color: #43a19e;
@@ -150,7 +152,7 @@
     display: inline-block;
     padding: 15px;
     color: #43a19e;
-    font-size: 23px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -168,7 +170,7 @@
 .nav_li i{
     box-sizing: border-box;
     text-align: right;
-    margin-right: 5px;
+    margin-right: 7px;
 }
 
 /*  Contenedor imagenes proximo carrusel  */
@@ -208,10 +210,13 @@
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+
 }
-.img-carrousel{
-    margin: 15px;
-    width: 550px;
+.img-carrousel {
+    margin: 10px; 
+    width: 300px; 
+    height: auto;
+    max-width: 100%;
 }
 
 /* Texto INICIO  */
@@ -220,7 +225,7 @@
     position: relative;
     padding: 10px 0;
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
     color: white;
     margin: 20px 0;
 }
@@ -232,7 +237,7 @@
 }
 
 .barra-excelencia span {
-    color: #1a65a6;
+    color: #2b2b2f;
 }
 
 
@@ -278,6 +283,7 @@
     border-right: solid #3b8d8a;
     border-left: solid #3b8d8a;
     margin-top: 5%;
+    box-sizing: border-box;
 }
 
 .sect-tit h3{
@@ -298,10 +304,12 @@
     background-color: #43a19e;
     height: 50%;
     width: 80%;
-    border-left: solid #3b8d8a;
-    border-right: solid #3b8d8a;
-    border-bottom: solid #3b8d8a;
+    border: solid #3b8d8a;
     margin-bottom: 5%;
+    margin-top: 2%;
+    padding: 2%;
+    box-sizing: border-box;
+
 }
 
 /*Formulario*/
@@ -452,7 +460,7 @@ footer {
 }
 
 .footer-bottom {
-    background-color: #7f8c8d;
+    background-color: #abaaaa4b;
     padding: 15px;
 }
 
