@@ -3,10 +3,6 @@
 ¡Gracias por visitar nuestro repositorio! 
 Aquí encontrarás toda la información relevante sobre nuestro proyecto de sitio web para la gestión médica de la Clínica Vitalidad, desarrollado como parte del curso de Python Front-End de programa Codo a codo que dicta la Agencia de Aprendizaje a lo largo de la Vida.
 
-*Descripción del Proyecto*
-
-Este proyecto forma parte de la primera etapa del curso. Consiste en el desarrollo de un sitio web de gestión médica la cual estará compuesta por cuatro secciones principales (4 páginas html). El diseño será completamente responsive, adaptándose a tres tamaños de dispositivos distintos: PC escritorio, Tables, Celular.
-
 *Secciones*
 
   1. INICIO 
@@ -19,7 +15,6 @@ Este proyecto forma parte de la primera etapa del curso. Consiste en el desarrol
   * HTML5: La estructura del sitio web estará maquetada utilizando Flexbox y/o Grid para garantizar una disposición eficiente del contenido.
   * CSS3: Se utilizara CSS para el diseño del sitio web, asegurando una apariencia atractiva y profesional.
   * Media queries: Implementamos media queries para lograr adaptabilidad del diseño en diferentes dispositivos.
-  * JavaScript: Se utilizara para añadir interactividad y funcionalidad adicionales.
   * Visual Studio Code: Se utilizara como ambiente de desarrollo/edición de codigo del sitio web.
 
 # Equipo de desarrollo

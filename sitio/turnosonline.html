@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../styles/estilos.css">
     <link rel="icon" href="../images/icono-logo-solapa.png">
     <script src="https://kit.fontawesome.com/8acd87fd5f.js" crossorigin="anonymous"></script>
-    <title>Autogestion - Login</title>
+    <title>Clínica Vitalidad</title>
 </head>
 
 <body>
@@ -29,29 +29,39 @@
     <main>
         <div class="blocks-container">
         <section class="blocks">
+            <h2 class="barra-excelencia">Complete el formulario</h2>
             <div class="block">
                 <div class="registro">
-                    <form action="show_data.html" target="_blank"><!--mostrardatosform.html-->
+                    <form action="show_data.html" target="_blank">
                         <fieldset>
-
-                            <legend>Datos personales </legend>
-                            <label for="Nombre">Nombre</label>
-                            <input type="text" name="Nombre" placeholder="Nombre"><br><br>
-                            <label for="Apellido">Apellido</label>
-                            <input name="Apellido" type="text" placeholder="Apellido"><br><br>
-                            <label for="Correo">E-Mail</label>
-                            <input type="email" name="Correo" placeholder="E-Mail"><br><br>
-
-                            <label for="Pass">Password</label>
-                            <input type="password" name="Pass" placeholder="Ingrese Password">
-
+                            <legend>Datos personales</legend>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="Nombre" placeholder="Nombre"><br><br>
+                            
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" name="Apellido" placeholder="Apellido"><br><br>
+                            
+                            <label for="correo">E-Mail</label>
+                            <input type="email" id="correo" name="Correo" placeholder="E-Mail"><br><br>
+                            
+                            <label for="pass">Password</label>
+                            <input type="password" id="pass" name="Pass" placeholder="Ingrese Password">
                         </fieldset>
+                        
                         <p>Género (Seleccione)
-                            <input type="radio" name="gender" value="hombre" checked>Hombre
-                            <input type="radio" name="gender" value="Mujer">Mujer
-                            <input type="radio" name="gender" value="Ninio">Niño
-                            <input type="radio" name="gender" value="Prefiero no decirlo">Prefiero no decirlo
+                            <input type="radio" id="hombre" name="gender" value="hombre" checked>
+                            <label for="hombre">Hombre</label>
+                            
+                            <input type="radio" id="mujer" name="gender" value="Mujer">
+                            <label for="mujer">Mujer</label>
+                            
+                            <input type="radio" id="ninio" name="gender" value="Ninio">
+                            <label for="ninio">Niño</label>
+                            
+                            <input type="radio" id="no-decir" name="gender" value="Prefiero no decirlo">
+                            <label for="no-decir">Prefiero no decirlo</label>
                         </p>
+                        
                         <fieldset>
                             <legend>Motivos Consulta</legend>
                             <label for="estudios">Especialidad: (Seleccione)</label>
@@ -66,47 +76,53 @@
                                 <option value="Fisiterapia">Fisioterapia</option>
                                 <option value="Fonoaudiologo">Fonoaudiologo</option>
                                 <option value="Psicologia">Psicologia</option>
-
-
                             </select>
                             <br>
-                            <p> Estudios Previos: Selecione <br>
-                                <input type="checkbox" name="Radiografias" value="Radiografias"> Radiografias
-                                <input type="checkbox" name="Analisis Clinicos" value="Analisis Clinicos"> Analisis
-                                Clinicos
-                                <input type="checkbox" name="Electrocardiogramas" value="Electrocardiogramas">
-                                Electrocardiogramas
-                                <input type="checkbox" name="Resonancia Magentica" value="Resonancia Magentica">
-                                Resonancia Magnetica
-                                <input type="checkbox" name="Otras Especialidades" value="Otras Especialidades"> Otras
-                                Especialiddades
-
+                            
+                            <p>Estudios Previos: Seleccione <br>
+                                <input type="checkbox" id="radiografias" name="Radiografias" value="Radiografias">
+                                <label for="radiografias">Radiografias</label>
+                                
+                                <input type="checkbox" id="analisis" name="Analisis Clinicos" value="Analisis Clinicos">
+                                <label for="analisis">Analisis Clinicos</label>
+                                
+                                <input type="checkbox" id="electrocardiogramas" name="Electrocardiogramas" value="Electrocardiogramas">
+                                <label for="electrocardiogramas">Electrocardiogramas</label>
+                                
+                                <input type="checkbox" id="resonancia" name="Resonancia Magentica" value="Resonancia Magentica">
+                                <label for="resonancia">Resonancia Magnetica</label>
+                                
+                                <input type="checkbox" id="otras" name="Otras Especialidades" value="Otras Especialidades">
+                                <label for="otras">Otras Especialidades</label>
                             </p>
-
-                            <label for="comentarios">Comentarios:</label> <br>
-                            <textarea name="comentarios" rows="10" cols="80" style="resize: none;"></textarea>
-                            <br>
+                            
+                            <label for="comentarios">Comentarios:</label><br>
+                            <textarea id="comentarios" name="comentarios" rows="10" cols="80" style="resize: none;"></textarea><br>
                         </fieldset>
-
-                        </fieldset>
+                        
                         <fieldset>
                             <legend>Otras Consultas</legend>
-                            <label for="turno">Obra Social </label>
-                            <select name="turno" id="">
+                            <label for="turno">Obra Social</label>
+                            <select name="turno" id="turno">
                                 <option value="Pami">Pami</option>
                                 <option value="Sancor Salud">Sancor Salud</option>
-                                <option value="Medife" selected="True">Medife</option>
-                                <option value="Otras" seldected="True">Otras </option>
+                                <option value="Medife" selected>Medife</option>
+                                <option value="Otras">Otras</option>
                             </select>
                         </fieldset>
-                        <button id="btnform" type="submit"><a href="../index.html">Enviar datos</a></button>
+                        <div class="contenedorbtn2">
+                        <button class="btn2" type="submit" formaction="../index.html">Enviar datos</button>
+                        </div>
+                    </form>
+                    
                 </div>
-
             </div>
         </section>
     </div>
     </main>
-
+    <a href="https://api.whatsapp.com/send/?phone=15551234567&text&type=phone_number&app_absent=0" target="_blank" class="float">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
     <footer>
         <div class="footer-container">
             <div class="footer-contact">

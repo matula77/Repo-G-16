@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Julius+Sans+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zeyada&display=swap');
 
- /*  Tipografias para todo el documento  */
  body {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 430;
+    font-weight: 400;
     font-style: normal;
     font-variation-settings:"wdth" 100;
     font-size: 14px;
@@ -12,7 +11,7 @@
     background: linear-gradient(0deg, rgba(39,69,68,1) 1%, rgba(40,77,76,1) 4%, rgba(50,162,158,1) 35%, rgba(67,161,144,1) 69%);
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Evita el scroll horizontal */
+    overflow-x: hidden;
 }
 
 /*  Header */
@@ -27,7 +26,7 @@
     padding: 0 20px;
     box-sizing: border-box;
 }
-/*Logo en header y en footer*/
+/*Logo en header*/
 .logo-header img {
     height: 140px;
     max-width: 100%;
@@ -65,77 +64,6 @@
 .logo-footer img:hover{
     transform: scale(1.2);
 }
-
-/**** INSTITUCIONAL ****/
-.blocks-container{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 185px;
-    margin-bottom: 10%;
-    margin-left: 1%;
-}
-
-.blocks {
-    animation: slideIn 1s ease forwards;
-    max-width: 92%;
-}
-
-.block {
-    display: flex;
-    background-color: #FFF;
-    padding: 10px;
-    margin-top: 45px;
-    border-radius: 25px;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.block img {
-    width: 35%;
-    height: auto;
-    border-radius: 25px;
-    margin-right: 2%;
-    padding: 15px;
-}
-
-.block p, .formulario {
-    color: #273739;
-    border-radius: 25px;
-    font-size: larger;
-    text-align: justify;
-    flex: 1;
-}
-.block p {
-    flex: 1;
-    color: #273739;
-    border-radius: 25px;
-    font-size: 16px large;
-    margin-right: 5%;
-    padding: 50px;
-}
-
-/*Estilos para btn de "Turnos online*/
-.btn{
-    border: 2px solid #43a19e;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #43a19e;
-    transition: all 0.3s ease;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-}
-
-.btn:hover{
-    background-color: #43a19e;
-    color: #ffffff;
-}
-
-
 /*  nav */
 .nav{
     background-color: #43a19e;
@@ -173,7 +101,99 @@
     margin-right: 7px;
 }
 
-/*  Contenedor imagenes proximo carrusel  */
+/**** INSTITUCIONAL ****/
+.blocks-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.blocks {
+    animation: slideIn 1s ease forwards;
+    max-width: 92%;
+}
+
+.block {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #FFF;
+    padding: 10px;
+    margin-top: 45px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.block img {
+    width: 35%;
+    height: auto;
+    border-radius: 25px;
+    margin-right: 2%;
+    padding: 15px;
+}
+
+.block p, .formulario {
+    color: #273739;
+    border-radius: 25px;
+    font-size: larger;
+    text-align: justify;
+    flex: 1;
+}
+.block p {
+    flex: 1;
+    color: #273739;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-right: 5%;
+    padding: 50px;
+}
+
+/*Estilos para boton de "Turnos online*/
+.btn{
+    border: 2px solid #43a19e;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #43a19e;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+.btn:hover{
+    background-color: #43a19e;
+    color: #ffffff;
+}
+/*Estilos para boton de "Enviar datos" de Turnos online*/
+.contenedorbtn2{
+    padding: 15px;
+    text-align: center;
+}
+.btn2{
+    border: 2px solid #43a19e;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #43a19e;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+.btn2:hover{
+    background-color: #43a19e;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+/*  Contenedor imagenes (La idea era hacer un carrusel)*/
 .caja{
     justify-content: center;
     display: flex;
@@ -184,16 +204,17 @@
     max-width: 100%;
     height: auto;
 }
-
-/*    Estilos al contenedor del mapa     */
-.mapa{
-    margin: 40px;
-}
-
 .section-f {
     padding: 5px 10%;
     
 } 
+/*  Contenedor mapa  */
+.mapa {
+    width: 94%;
+    height: 350px; /* Puedes ajustar la altura según sea necesario */
+    border: 0;
+    padding: 3%;
+}
 
 .section-f a{
     text-decoration: none;
@@ -213,8 +234,8 @@
 
 }
 .img-carrousel {
-    margin: 10px; 
-    width: 300px; 
+    margin: 30px; 
+    width: 430px; 
     height: auto;
     max-width: 100%;
 }
@@ -223,11 +244,11 @@
 
 .barra-excelencia {
     position: relative;
-    padding: 10px 0;
     text-align: center;
     font-size: 25px;
     color: white;
     margin: 20px 0;
+    margin-top: 5%;
 }
 
 .barra-excelencia p {
@@ -484,7 +505,7 @@ footer {
     width: 100%;
     height: auto;
     padding: 8px;
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 15px;
 
 }
