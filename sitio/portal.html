@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/estilos.css">
+    <link rel="stylesheet" href="../styles/portal.css">
     <link rel="icon" href="../images/icono-logo-solapa.png">
     <script src="https://kit.fontawesome.com/8acd87fd5f.js" crossorigin="anonymous"></script>
-    <title>Clínica Vitalidad</title>
+    <title>Portal</title>
 </head>
 
 <body>
@@ -17,55 +17,60 @@
                 <img src="../images/vitalidad2.png" alt="logo de la clinica">
             </a>
         </div>
-        <nav>
-            <ul class="nav_ul">
-                <li class="nav_li"><i class="fa-solid fa-house-medical"></i><a href="../index.html">Inicio</a></li>
-                <li class="nav_li"><i class="fa-solid fa-building-columns"></i><a href="../sitio/institucional.html">Institucional</a></li>
-                <li class="nav_li"><i class="fa-solid fa-desktop"></i><a href="#">Portal</a></li>
-            </ul>
-        </nav>
-        <a href="../sitio/turnosonline.html" class="btn">Turnos Online</a>
+        <section id="contenedor-menu">
+            <section class="botones">
+                <a href="#contenedor-menu"><img src="../images/abrir.png" id="abrir"></a>
+                <a href="#"><img src="../images/cerrar.png" id="cerrar"></a>
+            </section>
+            <nav>
+                <ul class="nav_ul">
+                    <li class="nav_li"><i class="fa-solid fa-house-medical"></i><a href="../index.html">Inicio</a></li>
+                    <li class="nav_li"><i class="fa-solid fa-building-columns"></i><a href="../sitio/institucional.html">Institucional</a></li>
+                    <li class="nav_li"><i class="fa-solid fa-desktop"></i><a href="#">Portal</a></li>
+                    <li class="nav_li"><a href="../sitio/turnosonline.html" class="btn">Turnos Online</a></li>
+                </ul>
+            </nav>
+            
+            
+        </section> 
     </header>
 
     <main class="main-usu">
         <section class="sect-tit">
             <img src="../images/icono-usuario.png" alt="">
-            <h3>Ingreso al Portal Personal</h3>
+            <h3>Portal Personal</h3>
         </section>
         <section class="sect-dat">
+            <h4>seccion</h4>
             <article class="art-usu">
-                <form action="" method="post">
+                <h2>Ingreso</h2>
+                <form action="#" method="post">
                     <fieldset>
                         <label for = "correo"> Email: </label>
                             <input type="email" name="correo" id = "correo" placeholder="Usuario@gmail.com">
                         <label for="pass">Contraseña:</label>
                             <input type="password" id="pass" name="pass" placeholder="Contraseña">
-                        <button id="ingresar"><a href="../index.html">Ingresar</a></button>
+                        <div class="ingresar"><a href="../index.html">Ingresar</a></div>
                         <div class="bot-form">
-                            <button><a href="#">Olvidé mi contraseña</a></button>
-                            <span class="separador"></span>
-                            <button><a href="../index.html">Contacto</a></button>
+                            <div><a href="#">Olvidé mi contraseña</a></div>
+                            <div><a href="../index.html">Contacto</a></div>
                         </div>
                     </fieldset>
                 </form>
             </article>
             <article class="art-usu">
-                <form action="" method="post">
+                <h2>Registro</h2>
+                <form action="#" method="post">
                     <fieldset>
                         <label for = "correo"> Email: </label>
-                            <input type="email" name="correo" id = "correo" placeholder="Usuario@gmail.com">
-                        <label for="password">Contraseña:</label>
-                            <input type="password" id="pass" name="pass" placeholder="Contraseña">    
+                            <input type="email" name="correo" id = "correoB" placeholder="Usuario@gmail.com">
+                        <label for="passB">Contraseña:</label>
+                            <input type="password" id="passB" name="pass" placeholder="Contraseña">    
                         <label for="dni">DNI:</label>
-                            <input type="password" id="pass" name="pass" placeholder="Contraseña">
-                        <button id="ingresar"><a href="../index.html">Registrarme</a></button>
-                        <div class="bot-form">
-                        </div>
+                            <input type="number" id="dni" name="dni" placeholder="DNI">
+                        <div class="ingresar"><a href="../index.html">Registrarme</a></div>
                     </fieldset>
                 </form>
-            </article>
-                <div class="botonAcci">
-                </div>
             </article>
         </section>
     </main>
@@ -89,7 +94,7 @@
             <p>© 2024 Clínica Vitalidad - Todos los derechos reservados</p>
         </div>
     </footer>
-    <a href="https://api.whatsapp.com/send/?phone=15551234567&text&type=phone_number&app_absent=0" target="_blank" class="float">
+    <a href="" target="_blank" class="float">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 </body>

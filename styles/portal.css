@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Julius+Sans+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zeyada&display=swap');
+
+ /*  Tipografias para todo el documento  */
+ body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 430;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    font-size: 16px;
+    background: rgb(198,255,241);
+    background: linear-gradient(0deg, rgba(198,255,241,1) 23%, rgba(106,223,192,1) 53%, rgba(78,186,160,1) 85%);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+/*  Header */
+.header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    z-index: 1000;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+/*Logo en header y en footer*/
+.logo-header img {
+    height: 165px;
+    max-width: 100%;
+    transition: transform 0.9s;
+}
+
+.header .logo-header img:hover,
+.contenedor-footer .logo-footer img{
+    transform: scale(1.2);
+}
+
+.logo-header a,
+.logo-footer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.logo-header a :hover,
+.logo-footer a :hover{
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo-header img,
+.logo-footer img{
+    max-width: 100%;
+    max-height: 100%;
+    transition: all 0.9s;
+}
+
+.logo-header img:hover,
+.logo-footer img:hover{
+    transform: scale(1.2);
+}
+
+/* esto se debe agregar al CSS general*/
+/**** INSTITUCIONAL ****/
+.blocks-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 185px;
+    margin-bottom: 10%;
+    margin-left: 1%;
+}
+
+.blocks {
+    animation: slideIn 1s ease forwards;
+    max-width: 92%;
+}
+
+.block {
+    display: flex;
+    background-color: #FFF;
+    padding: 10px;
+    margin-top: 45px;
+    border-radius: 25px;
+}
+
+.block img {
+    width: 35%;
+    height: auto;
+    border-radius: 25px;
+    margin-right: 2%;
+    padding: 15px;
+}
+
+.block p, .formulario {
+    color: #273739;
+    border-radius: 25px;
+    font-size: larger;
+    text-align: justify;
+}
+.block p {
+    flex: 1;
+    color: #273739;
+    border-radius: 25px;
+    font-size: 16px large;
+    margin-right: 5%;
+    padding: 50px;
+}
+
+/*Estilos para btn de "Turnos online*/
+.btn{
+    border: 2px solid #43a19e;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #43a19e;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn:hover{
+    background-color: #43a19e;
+    color: #ffffff;
+}
+
+
+/*  nav */
+.nav{
+    background-color: #43a19e;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav_ul{
+    margin: 0;
+    padding: 0;
+}
+
+.nav_li{
+    display: inline-block;
+    padding: 15px;
+    color: #43a19e;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.nav_li:hover > a {
+    color: #43a19e;
+    transition: all 0.6s;
+
+}
+.nav_li a{
+    color: #273739;
+    text-decoration: none;
+    margin-right: 40px;
+    margin-left: 5px;
+}
+.nav_li i{
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+}
+
+/*  Contenedor imagenes proximo carrusel  */
+.caja{
+    justify-content: center;
+    display: flex;
+}
+
+/*  estilos imágenes  */
+.caja img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*    Estilos al contenedor del mapa     */
+.mapa{
+    margin: 40px;
+}
+
+.section-f {
+    padding: 5px 10%;
+    
+} 
+
+.section-f a{
+    text-decoration: none;
+    color: black;
+}
+
+.section-f a:hover {
+    color: #43a19e;
+    transition: all 0.6s;
+
+}
+
+.contenedor-imagenes{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-carrousel{
+    margin: 15px;
+    width: 550px;
+}
+
+/* Texto INICIO  */
+
+.barra-excelencia {
+    position: relative;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin: 20px 0;
+}
+
+.barra-excelencia p {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.barra-excelencia span {
+    color: #1a65a6;
+}
+
+
+
+/*Boton de whatsapp fijo  */
+.float{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #25d366;
+    bottom: 30px;
+    right: 30px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 999;
+}
+.fa-whatsapp{
+    font-size: 52px;
+}
+.float:hover{
+    background-color: #27f472;
+}
+
+/* --- usuario --- */
+.main-usu {
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/salas-de-espera-min.jpg);
+    background-size: cover; 
+}
+
+/*requisito*/
+main h4 {
+    display: none;
+}
+
+.sect-tit {
+    display: flex;
+    flex-direction: row;
+    background-color: #43a19e;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    border: solid #3b8d8a;
+    margin-top: 5%;
+}
+
+.sect-tit h3{
+    padding: 2%;
+    margin: 4%;
+    color: rgb(255, 255, 255);
+    font-size: 200%;
+}
+
+.sect-tit img {
+    width: 10%;
+}
+
+/*Contenedor de formulario y botones*/
+.sect-dat {
+    display: flex;
+    flex-direction: row;
+    background-color: #43a19e;
+    height: 50%;
+    width: 80%;
+    border-left: solid #3b8d8a;
+    border-right: solid #3b8d8a;
+    border-bottom: solid #3b8d8a;
+    margin-bottom: 5%;
+}
+
+/*Formulario*/
+.art-usu {
+    background-color: #43a19e;
+    color: white;
+    flex: 1;
+    padding: 2em;
+}
+
+.art-usu + .art-usu {
+    border-left: solid 1px #3b8d8a;
+}
+
+.art-usu form fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.art-usu form label {
+    margin-top: 3%;
+    font-size: 1.5em;
+}
+
+.art-usu form input {
+    border: 0.2em solid rgba(33, 102, 100, 0.753);
+    width: 90%;
+    height: 2em;
+}
+
+.ingresar {
+    margin-top: 10%;
+    font-size: 120%;
+    width: 91%;
+    padding: 1%;
+    border: 0.15em solid rgba(33, 102, 100, 0.753);
+    background-color: #2b2b2f;
+    color: white;
+    text-align: center;
+}
+
+.ingresar:hover{
+    background-color: rgba(255, 255, 255, 0.753);
+    color: #2b2b2f;
+}
+.ingresar a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.bot-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.bot-form div+div {
+    border-left: 2px solid #2b2b2f ;
+}
+
+.bot-form div {
+    margin-top: 10%;
+    border: none;
+    background-color: #43a19e;
+    color: white;  
+    padding: 5px;
+}
+
+.bot-form div:hover {
+    color: #2b2b2f;
+}
+
+.bot-form a{
+    text-decoration: none;
+    color: inherit;
+}
+/*Botones*/
+.boton-usu {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.boton-usu div {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+
+
+
+
+
+/* --- Fin usuario --- */
+
+/*    Footer     */
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-contact p {
+    margin: 10px 0;
+}
+
+.footer-contact i,
+.footer-social i {
+    margin-right: 10px;
+}
+
+.footer-logo img {
+    max-width: 100px;
+}
+
+.footer-social a {
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-social a.facebook {
+    color: #0051ff;
+}
+
+.footer-social a.youtube {
+    color: #FF0000;
+}
+
+.footer-social a.instagram {
+    color: #b32252;
+}
+
+.footer-bottom {
+    background-color: #7f8c8d;
+    padding: 15px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+
+/* Agregados para el formulario */
+
+.registro label{
+    font-weight: bold;
+    width:300px ;
+    margin-right: 25px;
+    padding: 5px;
+
+}
+#btnform{
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 15px;
+
+}
+#btnform:hover{
+    background-color: #ddf6f2;
+}
+
+
+/*Contenedor de formulario y botones*/
+.sect-dat {
+    display: flex;
+    flex-direction: row;
+    background-color: #43a19e;
+    padding: 2em;
+    border: solid #3b8d8a;
+    margin: 2% auto;
+    width: 80%;
+}
+
+
+@media all and (min-width:320px) {
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    #contenedor-menu {
+        width: 25%;
+    }
+
+    #contenedor-menu .nav_ul {
+        height: 0vh;
+        /*transition: 1s height ease; personalizacion ocultar*/
+        overflow: hidden;
+    }
+
+    #contenedor-menu #abrir {
+        display: block;
+    }
+
+    #contenedor-menu #cerrar{
+        display: none;
+    }
+
+    #contenedor-menu:target .nav_ul {
+        height: 45vh; /* Ocupa toda la altura de la ventana */
+        width: 100%; /* Ocupa toda la anchura de la ventana */
+        top: 30%; /* Se posiciona en la parte superior */
+        left: 0; /* Se posiciona en la parte izquierda */
+        position: absolute; /* Fija el menú en la ventana */
+        transition: 1s height ease;
+        background-color: #2b2b2f;
+    }
+
+    #contenedor-menu:target #abrir {
+        display: none;
+    }
+
+    #contenedor-menu:target #cerrar {
+        display: block;
+    }
+
+    #contenedor-menu .nav_ul a {
+        margin-bottom: 0.5rem;
+        color: aliceblue;
+    } 
+
+    #contenedor-menu img {
+        max-width: 100%;
+    }
+
+    .main-usu {
+        height: 200vh;
+    }
+
+    main .sect-dat {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sect-tit {
+        text-align: center;
+    } 
+
+    .sect-tit img {
+        width: 20%;
+        
+    }
+
+    .sect-dat {
+        height: 100%;
+    }
+
+    .sect-dat .art-usu{
+        border: none;
+    }
+
+    .art-usu + .art-usu {
+        border-top: solid #3b8d8a;
+    }
+
+    .art-usu h2 {
+        display: block;
+        text-align: center;
+        border-bottom: solid #2b2b2f;
+    }
+
+    footer div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .footer-social {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media all and (min-width:768px) {
+
+    #contenedor-menu:target .nav_ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 45vh; /* Ocupa toda la altura de la ventana */
+        width: 100%; /* Ocupa toda la anchura de la ventana */
+        top: 28%; /* Se posiciona en la parte superior */
+        left: 0; /* Se posiciona en la parte izquierda */
+        position: absolute; /* Fija el menú en la ventana */
+        transition: 1s height ease;
+        background-color: #2b2b2f;
+    }
+   
+}
+
+@media all and (min-width:1024px) {
+    #abrir, #cerrar {
+        display: none;
+    }
+
+    #contenedor-menu #abrir, #cerrar {
+        display: none;
+    }
+
+    #contenedor-menu .nav_ul {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .btn{
+        color: #43a19e;
+    }
+    
+    .btn:hover{
+        background-color: #43a19e;
+        color: #ffffff !important;
+    }
+
+    .header {
+        
+        width: 100%;
+    }
+
+    .logo-header img {
+        
+        width: 15vw;
+    }
+
+    #contenedor-menu {
+        width: 80%;
+        margin-left: 20%;
+    }
+
+
+    #contenedor-menu .nav_li a {
+        color: #273739;
+    }
+
+    .nav_li:hover > a{
+        color: #43a19e ;
+        transition: all 0.6s;
+    
+    }
+
+    .main-usu {
+        height: auto;
+    }
+
+    main .sect-dat {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sect-tit {
+        text-align: left;
+    }
+
+    .sect-tit img {
+        width: 10%;
+    }
+
+    .sect-dat {
+        height: auto;
+    }
+
+    .sect-dat .art-usu {
+        border: none;
+    }
+
+    .art-usu + .art-usu {
+        border-left: solid #3b8d8a;
+    }
+
+    .art-usu h2 {
+        display: none;
+    }
+
+    footer div {
+        display: flex;
+        flex-direction: colum;
+    }
+    footer .footer-container {
+        display: flex;
+        flex-direction: row;
+    }
+    footer .footer-social {
+        display: flex;
+        flex-direction: row;
+    }
+}
