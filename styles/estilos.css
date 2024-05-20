@@ -7,8 +7,8 @@
     font-style: normal;
     font-variation-settings:"wdth" 100;
     font-size: 14px;
-    background: rgb(39,69,68);
-    background: linear-gradient(0deg, rgba(39,69,68,1) 1%, rgba(40,77,76,1) 4%, rgba(50,162,158,1) 35%, rgba(67,161,144,1) 69%);
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 1%, rgba(9,9,121,1) 12%, rgba(6,79,167,1) 29%, rgba(4,127,199,1) 42%, rgba(3,168,225,1) 55%, rgba(97,197,241,1) 69%, rgba(129,218,236,1) 86%);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -446,6 +446,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
     padding: 20px;
 }
 
@@ -459,7 +460,7 @@ footer {
 }
 
 .footer-logo img {
-    max-width: 100px;
+    max-width: 120px;
 }
 
 .footer-social a {
