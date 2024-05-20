@@ -234,6 +234,7 @@
 
 }
 .img-carrousel {
+    border-radius: 20px;
     margin: 30px; 
     width: 430px; 
     height: auto;
@@ -496,10 +497,9 @@ footer {
 /* Agregados para el formulario */
 
 .registro label{
+
     font-weight: bold;
-    width:300px ;
-    margin-right: 25px;
-    padding: 5px;
+    display: inline-flex;
 
 }
 #btnform{
