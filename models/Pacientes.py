@@ -12,6 +12,7 @@ class Pacientes:
         self.correo=correo
         self.telefono=telefono
         self.direccion=direccion
+    
        
         
     def crearPaciente(cls,paciente)    :
@@ -78,11 +79,4 @@ Pacientes.mostrarPacientes()
     
     
     
-    
-    #   id INT AUTO_INCREMENT PRIMARY KEY,
-    # nombre VARCHAR(100),
-    # apellido VARCHAR(100),
-    # fecha_nacimiento DATE,
-    # correo VARCHAR(100),
-    # telefono VARCHAR(15),
-    # direccion VARCHAR(255)
+   
