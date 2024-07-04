@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ysql
+Version: 1.5.0
+Summary: a more efficient and concise SQLite framework.
+Home-page: https://gitee.com/darlingxyz/ysql
+Author: dfqxhhh
+Author-email: dfqxhhh@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+<h1 align='center'> ysql框架 </h1>
+
+更高效更简洁的sqlite数据库框架，借鉴了安卓Room框架的设计，将框架划分为Entity数据类、Dao数据访问类、Database数据库类三个层次。
+
+框架直接建立在sqlite官方库的基础之上，无其他依赖，性能损失很小，隐藏（自动实现）了许多烦人的中间细节，只需要关心sql语句与python数据应用场景。
+
+- 第三方库依赖：无
+- 项目地址：[ysql (gitee)](https://gitee.com/darlingxyz/ysql)
+- 更新日志：[ChangeLog.md](https://gitee.com/darlingxyz

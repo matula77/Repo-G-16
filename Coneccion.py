@@ -1,5 +1,5 @@
 import mysql.connector     
-from mysql.connector.errors import DatabaseError  
+# from mysql.connector.errors import DatabaseError  
 
 
 

@@ -1,17 +1,14 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,request
+from Coneccion import ConeccionDB    
+
 
 app = Flask(__name__)
 
-@app.route('/')
-def inicio():
-    return render_template('index.html')
-@app.route('/info')
-def info():
-    return render_template('./info.html')
+from routes.vistas import *
 
     
 if __name__=="__name__":
     app.run(debug=True)
-    app.run()
+    
     
     

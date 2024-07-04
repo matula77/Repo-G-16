@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/portal.css" />
+    <link rel="stylesheet" href="/static/estilos.css" />
+    <link rel="icon" href="/static/img/icono-logo-solapa.png" />
+    <script
+      src="https://kit.fontawesome.com/8acd87fd5f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portal</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo-header">
+        <a href="/">
+          <img src="/static/img/vitalidad2.png" alt="logo de la clinica" />
+        </a>
+      </div>
+      <section id="contenedor-menu">
+        <section class="botones">
+          <a href="#contenedor-menu"
+            ><img src="/static/img/abrir.png" id="abrir" alt="menu"
+          /></a>
+          <a href="#"
+            ><img src="/static/img/cerrar.png" id="cerrar" alt="cierre"
+          /></a>
+        </section>
+        <nav>
+          <ul class="nav_ul">
+            <li class="nav_li">
+              <i class="fa-solid fa-house-medical"></i><a href="/">Inicio</a>
+            </li>
+            <li class="nav_li">
+              <i class="fa-solid fa-building-columns"></i
+              ><a href="/institucional">Institucional</a>
+            </li>
+            <li class="nav_li">
+              <i class="fa-solid fa-desktop"></i><a href="#">Portal</a>
+            </li>
+            <li class="nav_li">
+              <a href="/turnosonline" class="btn">Turnos Online</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main class="main-usu">
+      <section class="sect-tit">
+        <img src="static/img/icono-usuario.png" alt="Logo-usuario-persona" />
+        <h3>Portal Personal</h3>
+      </section>
+      <section class="sect-dat">
+        <h4>Ingreso Personal de Clinica</h4>
+
+        <article class="art-usu">
+          <h2>Registro Personal Nuevo </h2>
+          <form action="#" method="post">
+            <fieldset>
+              <label for="Pnombre">Apellido y Nombre</label>
+              <input type="text" name="Pnobre" id="Pnobre" />
+              <label for="dni">DNI:</label>
+              <input type="number" id="dni" name="dni" placeholder="DNI" />
+              <label for="Pdomicilio">Domicilio Particular</label>
+              <input type="text" name="Pdomicilio" id="Pdomicilio" />
+              <label for="Ptelefono">Telefono:</label>
+              <input type="tel" name="Ptelefono" id="Ptelefono" />
+
+              <label for="correo" name="Pcorreo"> Email: </label>
+              <input
+                type="email"
+                name="Pcorreo"
+                id="Pcorreo"
+                placeholder="Usuario@gmail.com"
+              />
+              <label for="Ppass">Contraseña:</label>
+              <input
+                type="password"
+                id="Ppass"
+                name="Ppass"
+                placeholder="Contraseña"
+              />
+              <div class="ingresar"><a href="/">Registrarme</a></div>
+            </fieldset>
+          </form>
+        </article>
+      </section>
+    </main>
+    <a
+      href="https://api.whatsapp.com/send/?phone=15551234567&text&type=phone_number&app_absent=0"
+      target="_blank"
+      class="float"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-contact">
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Callefalsa, 123, Buenos Aires,
+            Argentina
+          </p>
+          <p><i class="fas fa-envelope"></i> info@clinicavitalidad.com</p>
+          <p><i class="fas fa-phone"></i> (2246) 556311</p>
+        </div>
+        <div class="footer-logo">
+          <img src="/static/img/vitalidad2.png" alt="Clínica Pueyrredon" />
+        </div>
+        <div class="footer-social">
+          <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Clínica Vitalidad - Todos los derechos reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>
